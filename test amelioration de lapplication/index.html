@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu d'Orthographe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu d'Orthographe</h1>
+        <div class="progress-container">
+            <div id="progress-bar">0%</div>
+        </div>
+        <div id="word-container">
+            <!-- Les lettres mélangées apparaîtront ici -->
+        </div>
+        <button id="speak">🎤 Écouter le mot</button>
+        <input type="text" id="answer" placeholder="Tape ta réponse ici" />
+        <button id="submit">✔️ Valider</button>
+        <p id="feedback"></p>
+        <button id="next-word" style="display: none;">➡️ Mot suivant</button>
+        <img src="mascotte.svg" alt="Mascotte rigolote" class="mascotte">
+    </div>
+
+    <audio id="success-sound" src="success.mp3"></audio>
+    <audio id="error-sound" src="error.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
